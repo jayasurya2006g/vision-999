@@ -163,7 +163,7 @@ document.getElementById("signupBtn").addEventListener("click", () => {
         return;
     }
 
-    fetch("http://localhost:5000/Signup",{
+    fetch("https://algoplay-backend-0s65.onrender.com/Signup",{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({
@@ -193,3 +193,4 @@ document.getElementById("signupBtn").addEventListener("click", () => {
 
 </body>
 </html>
+
