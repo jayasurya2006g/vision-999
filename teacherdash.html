@@ -177,7 +177,7 @@ if (!teacherEmail || !teacherSchool) {
   window.location.href = "teacherlogin.html";
 }
 
-fetch(`http://localhost:5000/teacher/dashboard?email=${encodeURIComponent(teacherEmail)}`)
+fetch(`https://algoplay-backend-0s65.onrender.com/teacher/dashboard?email=${encodeURIComponent(teacherEmail)}`)
 .then(res => res.json())
 .then(data => {
 
@@ -223,3 +223,4 @@ fetch(`http://localhost:5000/teacher/dashboard?email=${encodeURIComponent(teache
 
 </body>
 </html>
+
