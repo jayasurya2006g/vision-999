@@ -155,7 +155,7 @@ function loginTeacher() {
     btn.disabled = true;
     btn.textContent = "Logging in...";
 
-    fetch("http://localhost:5000/TeacherLogin", {
+    fetch("https://algoplay-backend-0s65.onrender.com/TeacherLogin", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password })
@@ -189,3 +189,4 @@ function loginTeacher() {
 
 </body>
 </html>
+
