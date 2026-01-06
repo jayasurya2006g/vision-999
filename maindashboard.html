@@ -330,7 +330,7 @@ html, body {
     document.getElementById('studentName').innerText = studentName;
 
     // Fetch Assignments
-    fetch("http://localhost:5000/assignments")
+    fetch("https://algoplay-backend-0s65.onrender.com/assignments")
   .then(res => res.json())
   .then(data => {
     const list = document.getElementById('assignmentList');
@@ -694,4 +694,5 @@ function init() {
 window.onload = init;
 </script>
 </body>
+
 </html>
